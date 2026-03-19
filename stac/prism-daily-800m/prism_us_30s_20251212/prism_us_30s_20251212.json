@@ -1,0 +1,171 @@
+{
+  "type": "Feature",
+  "stac_version": "1.1.0",
+  "stac_extensions": [
+    "https://stac-extensions.github.io/projection/v1.1.0/schema.json",
+    "https://stac-extensions.github.io/raster/v1.1.0/schema.json"
+  ],
+  "id": "prism_us_30s_20251212",
+  "geometry": {
+    "type": "Polygon",
+    "coordinates": [
+      [
+        [
+          -125.020833,
+          24.0625
+        ],
+        [
+          -66.479167,
+          24.0625
+        ],
+        [
+          -66.479165,
+          49.937502
+        ],
+        [
+          -125.020833,
+          49.9375
+        ],
+        [
+          -125.020833,
+          24.0625
+        ]
+      ]
+    ]
+  },
+  "bbox": [
+    -125.020833,
+    24.0625,
+    -66.479165,
+    49.937502
+  ],
+  "properties": {
+    "prism:prism_code_version": "16.2-20250715-1813",
+    "prism:prism_dataset_create_date": "20260225-0856",
+    "prism:prism_dataset_filename": "prism_ppt_us_30s_20251212.tif",
+    "prism:prism_dataset_release_number": "4",
+    "prism:prism_dataset_remarks": "This grid was developed in two steps: (1) precipitation data were modeled with PRISM at 30-arc-second (~800m) resolution to produce the source grid(s) listed under PRISM_SOURCE_FILENAME, on the date(s) listed under PRISM_SOURCE_CREATE_DATE; and (2) The source grid was adjusted as needed to ensure that the sum of the daily grids equals the monthly modeled grid.",
+    "prism:prism_dataset_type": "an91/r2112",
+    "prism:prism_dataset_version": "D2",
+    "prism:prism_source_create_date": "20260216-0219",
+    "prism:prism_source_filename": "adj_best_ppt_us_us_30s_20251212.bil",
+    "prism:area_or_point": "Area",
+    "proj:epsg": 4269,
+    "proj:geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            -125.02083333333351,
+            24.062500001034504
+          ],
+          [
+            -66.47916666900852,
+            24.062500001034504
+          ],
+          [
+            -66.47916666900852,
+            49.9374999999995
+          ],
+          [
+            -125.02083333333351,
+            49.9374999999995
+          ],
+          [
+            -125.02083333333351,
+            24.062500001034504
+          ]
+        ]
+      ]
+    },
+    "proj:bbox": [
+      -125.02083333333351,
+      24.062500001034504,
+      -66.47916666900852,
+      49.9374999999995
+    ],
+    "proj:shape": [
+      3105,
+      7025
+    ],
+    "proj:transform": [
+      0.008333333333,
+      0.0,
+      -125.02083333333351,
+      0.0,
+      -0.008333333333,
+      49.9374999999995,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "datetime": "2025-12-12T00:00:00Z"
+  },
+  "links": [
+    {
+      "rel": "root",
+      "href": "../../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "collection",
+      "href": "../collection.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "parent",
+      "href": "../collection.json",
+      "type": "application/json"
+    }
+  ],
+  "assets": {
+    "ppt": {
+      "href": "data/20251212/prism_ppt_us_30s_20251212.tif",
+      "type": "image/tiff; application=geotiff",
+      "raster:bands": [
+        {
+          "data_type": "float32",
+          "scale": 1.0,
+          "offset": 0.0,
+          "sampling": "area",
+          "nodata": -9999.0,
+          "statistics": {
+            "mean": 1.0682716182247265,
+            "minimum": -0.5128044486045837,
+            "maximum": 82.78582763671875,
+            "stddev": 3.788714160213896,
+            "valid_percent": 56.08745516004415
+          },
+          "histogram": {
+            "count": 11,
+            "min": -0.5128044486045837,
+            "max": 82.78582763671875,
+            "buckets": [
+              250990,
+              6126,
+              1426,
+              858,
+              442,
+              175,
+              82,
+              33,
+              33,
+              9
+            ]
+          }
+        }
+      ],
+      "roles": [
+        "data"
+      ]
+    },
+    "tmean": {
+      "href": "data/20251212/prism_tmean_us_30s_20251212.tif",
+      "type": "image/tiff; application=geotiff",
+      "roles": [
+        "data"
+      ]
+    }
+  },
+  "collection": "prism-daily-800m"
+}

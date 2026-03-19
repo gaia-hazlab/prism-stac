@@ -1,0 +1,16 @@
+[workspace]
+authors = ["Scott Henderson <3924836+scottyhq@users.noreply.github.com>"]
+channels = ["conda-forge"]
+name = "prism-stac"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+download = { cmd = "python download.py ppt 20251201", description = "Download a PRISM daily zip and extract the TIF" }
+download-range = { cmd = "python download_range.py --vars ppt,tmean --start 20251201 --end 20251231", description = "Download PRISM TIFs for a date range and multiple variables" }
+create-stac = { cmd = "python create_stac.py --data-dir data --stac-dir stac", description = "Create STAC catalog from downloaded PRISM TIFs" }
+
+[dependencies]
+pystac = ">=1.14.3,<2"
+rio-stac = ">=0.12.0,<0.13"
+requests = ">=2.32.5,<3"

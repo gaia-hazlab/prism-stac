@@ -1,0 +1,194 @@
+{
+  "type": "Collection",
+  "id": "prism-daily-800m",
+  "stac_version": "1.1.0",
+  "description": "PRISM daily 800m meteorological data for CONUS",
+  "links": [
+    {
+      "rel": "root",
+      "href": "../catalog.json",
+      "type": "application/json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251201/prism_us_30s_20251201.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251202/prism_us_30s_20251202.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251203/prism_us_30s_20251203.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251204/prism_us_30s_20251204.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251205/prism_us_30s_20251205.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251206/prism_us_30s_20251206.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251207/prism_us_30s_20251207.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251208/prism_us_30s_20251208.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251209/prism_us_30s_20251209.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251210/prism_us_30s_20251210.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251211/prism_us_30s_20251211.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251212/prism_us_30s_20251212.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251213/prism_us_30s_20251213.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251214/prism_us_30s_20251214.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251215/prism_us_30s_20251215.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251216/prism_us_30s_20251216.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251217/prism_us_30s_20251217.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251218/prism_us_30s_20251218.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251219/prism_us_30s_20251219.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251220/prism_us_30s_20251220.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251221/prism_us_30s_20251221.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251222/prism_us_30s_20251222.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251223/prism_us_30s_20251223.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251224/prism_us_30s_20251224.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251225/prism_us_30s_20251225.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251226/prism_us_30s_20251226.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251227/prism_us_30s_20251227.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251228/prism_us_30s_20251228.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251229/prism_us_30s_20251229.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251230/prism_us_30s_20251230.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "item",
+      "href": "./prism_us_30s_20251231/prism_us_30s_20251231.json",
+      "type": "application/geo+json"
+    },
+    {
+      "rel": "parent",
+      "href": "../catalog.json",
+      "type": "application/json"
+    }
+  ],
+  "extent": {
+    "spatial": {
+      "bbox": [
+        [
+          -125.020833,
+          24.0625,
+          -66.479165,
+          49.937502
+        ]
+      ]
+    },
+    "temporal": {
+      "interval": [
+        [
+          "2025-12-01T00:00:00Z",
+          "2025-12-31T00:00:00Z"
+        ]
+      ]
+    }
+  },
+  "license": "other"
+}
