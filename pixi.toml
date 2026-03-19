@@ -8,7 +8,8 @@ version = "0.1.0"
 [tasks]
 download = { cmd = "python download.py ppt 20251201", description = "Download a PRISM daily zip and extract the TIF" }
 download-range = { cmd = "python download_range.py --vars ppt,tmean --start 20251201 --end 20251231", description = "Download PRISM TIFs for a date range and multiple variables" }
-create-stac = { cmd = "python create_stac.py --data-dir data --stac-dir stac", description = "Create STAC catalog from downloaded PRISM TIFs" }
+create-stac = { cmd = "python create_stac.py --data-dir data --stac-dir stac --asset-base-url https://cresst.s3.amazonaws.com/prism", description = "Create STAC catalog from downloaded PRISM TIFs" }
+upload = { cmd = "aws s3 sync data/ s3://cresst/prism/ --exclude '*' --include '*.tif'", description = "Upload TIF files to S3" }
 
 [dependencies]
 pystac = ">=1.14.3,<2"

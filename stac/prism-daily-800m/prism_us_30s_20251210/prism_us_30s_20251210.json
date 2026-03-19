@@ -120,8 +120,8 @@
   ],
   "assets": {
     "ppt": {
-      "href": "data/20251210/prism_ppt_us_30s_20251210.tif",
-      "type": "image/tiff; application=geotiff",
+      "href": "https://cresst.s3.amazonaws.com/prism/20251210/prism_ppt_us_30s_20251210.tif",
+      "type": "image/tiff; application=geotiff; profile=cloud-optimized",
       "raster:bands": [
         {
           "data_type": "float32",
@@ -160,7 +160,7 @@
       ]
     },
     "tmean": {
-      "href": "data/20251210/prism_tmean_us_30s_20251210.tif",
+      "href": "https://cresst.s3.amazonaws.com/prism/20251210/prism_tmean_us_30s_20251210.tif",
       "type": "image/tiff; application=geotiff",
       "roles": [
         "data"

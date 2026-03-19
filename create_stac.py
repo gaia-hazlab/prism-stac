@@ -51,7 +51,7 @@ def create_item(date_dir: Path, collection_id: str) -> pystac.Item:
         properties=properties,
         asset_name=first_var,
         asset_roles=["data"],
-        asset_media_type=pystac.MediaType.GEOTIFF,
+        asset_media_type=pystac.MediaType.COG,
         with_proj=True,
         with_raster=True,
         geom_precision=6,
@@ -89,6 +89,12 @@ def main():
         "--stac-dir",
         default="stac",
         help="Output directory for the STAC catalog (default: stac)",
+    )
+    parser.add_argument(
+        "--asset-base-url",
+        default=None,
+        help="Base URL for asset hrefs (e.g. https://cresst.s3.amazonaws.com/prism). "
+        "If set, asset hrefs become <base-url>/<date>/<filename>.",
     )
     args = parser.parse_args()
 
@@ -141,7 +147,16 @@ def main():
     )
     catalog.add_child(collection)
 
-    # Make asset hrefs relative and save
+    # Remap asset hrefs to remote URLs if requested
+    if args.asset_base_url:
+        base = args.asset_base_url.rstrip("/")
+        for item in collection.get_items():
+            for asset in item.assets.values():
+                # Extract <date>/<filename> from the local path
+                p = Path(asset.href)
+                asset.href = f"{base}/{p.parent.name}/{p.name}"
+
+    # Make catalog/collection/item link hrefs relative and save
     catalog.normalize_hrefs(str(stac_root))
     catalog.save(catalog_type=pystac.CatalogType.SELF_CONTAINED)
 
